@@ -8,7 +8,7 @@ export default function SubjectGrid() {
 
   const handleClick = (subject: SubjectInfo) => {
     play('click');
-    navigate(`/quiz/${subject.id}`);
+    navigate(`/subject/${subject.id}`);
   };
 
   return (
@@ -22,8 +22,9 @@ export default function SubjectGrid() {
         >
           <div className="text-4xl mb-3">{s.icon}</div>
           <h3 className="text-xl font-bold text-primary-foreground mb-1">{s.name}</h3>
-          <p className="text-primary-foreground/80 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-            Soruları Çöz <span className="text-lg">→</span>
+          <p className="text-primary-foreground/80 text-sm">{s.topics.length} konu</p>
+          <p className="text-primary-foreground/80 text-sm flex items-center gap-1 group-hover:gap-2 transition-all mt-1">
+            Konuları Gör <span className="text-lg">→</span>
           </p>
         </button>
       ))}

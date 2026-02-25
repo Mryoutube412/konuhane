@@ -28,7 +28,10 @@ export interface SubjectInfo {
 
 export const SUBJECTS: SubjectInfo[] = [
   {
-    id: 'turkce', name: 'Türkçe', icon: '📖', gradient: 'gradient-turkce',
+    id: 'turkce',
+    name: 'Türkçe',
+    icon: '📖',
+    gradient: 'gradient-turkce',
     topics: [
       { id: 'es_zit_anlam', name: 'Eş-Zıt Anlam', icon: '🔄' },
       { id: 'sozcuk_turleri', name: 'Sözcük Türleri', icon: '📝' },
@@ -38,10 +41,26 @@ export const SUBJECTS: SubjectInfo[] = [
       { id: 'fiiller', name: 'Fiiller', icon: '🏃' },
       { id: 'ses_bilgisi', name: 'Ses Bilgisi', icon: '🔊' },
       { id: 'yazim_kurallari', name: 'Yazım Kuralları', icon: '✍️' },
+      // ─── YENİ EKLEDİKLERİMİZ ───
+      { id: 'fiilimsiler', name: 'Fiilimsiler', icon: '🏃‍♂️' },
+      { id: 'cumlenin_ogeleri', name: 'Cümlenin Öğeleri', icon: '🧩' },
+      { id: 'cumle_turleri', name: 'Cümle Türleri', icon: '📜' },
+      { id: 'metin_turleri', name: 'Metin Türleri', icon: '📚' },
+      { id: 'fiilde_cati', name: 'Fiilde Çatı', icon: '🏗️' },
+      { id: 'paragraf', name: 'Paragraf', icon: '📝' },
+      { id: 'anlatim_bozukluklari', name: 'Anlatım Bozuklukları', icon: '⚠️' },
+      { id: 'noktalama_isaretleri', name: 'Noktalama İşaretleri', icon: '❗' },
+      { id: 'ortulu_anlam', name: 'Örtülü Anlam', icon: '🕶️' },
+      { id: 'gercek_mecaz', name: 'Gerçek-Mecaz Anlam', icon: '🌟' },
+      { id: 'oznel_nesnel', name: 'Öznel-Nesnel Anlatım', icon: '🧠' },
+      { id: 'deyim_atasozleri', name: 'Deyim & Atasözleri', icon: '💭' },
     ],
   },
   {
-    id: 'matematik', name: 'Matematik', icon: '🔢', gradient: 'gradient-matematik',
+    id: 'matematik',
+    name: 'Matematik',
+    icon: '🔢',
+    gradient: 'gradient-matematik',
     topics: [
       { id: 'toplama_cikarma', name: 'Toplama-Çıkarma', icon: '➕' },
       { id: 'carpma_bolme', name: 'Çarpma-Bölme', icon: '✖️' },
@@ -51,11 +70,27 @@ export const SUBJECTS: SubjectInfo[] = [
       { id: 'denklemler', name: 'Denklemler', icon: '⚖️' },
       { id: 'oran_oranti', name: 'Oran-Orantı', icon: '📊' },
       { id: 'olasilik', name: 'Olasılık', icon: '🎲' },
+      // ─── YENİ EKLEDİKLERİMİZ ───
+      { id: 'ebob_ekok', name: 'EBOB-EKOK', icon: '🔍' },
+      { id: 'uslu_ifadeler', name: 'Üslü İfadeler', icon: '📈' },
+      { id: 'karekok', name: 'Kareköklü İfadeler', icon: '√' },
+      { id: 'veri_analizi', name: 'Veri Analizi', icon: '📊' },
+      { id: 'cebirsel_ifadeler', name: 'Cebirsel İfadeler', icon: 'x²' },
+      { id: 'dogrusel_denklem', name: 'Doğrusal Denklemler', icon: 'y = mx + n' },
+      { id: 'koordinat', name: 'Koordinat Sistemi', icon: '🗺️' },
+      { id: 'esitsizlik', name: 'Eşitsizlikler', icon: '< >' },
+      { id: 'ucgenler', name: 'Üçgenler & Pisagor', icon: '△' },
+      { id: 'oteleme_yansima', name: 'Öteleme & Yansıma', icon: '↔️' },
+      { id: 'prizmalar', name: 'Prizmalar & Geometrik Cisimler', icon: '⬛' },
     ],
   },
   {
-    id: 'fen', name: 'Fen Bilimleri', icon: '🔬', gradient: 'gradient-fen',
+    id: 'fen',
+    name: 'Fen Bilimleri',
+    icon: '🔬',
+    gradient: 'gradient-fen',
     topics: [
+      // Mevcut olanları koruduk + yenileri ekledik
       { id: 'madde', name: 'Madde ve Özellikleri', icon: '🧪' },
       { id: 'canlilar', name: 'Canlılar Dünyası', icon: '🌿' },
       { id: 'kuvvet', name: 'Kuvvet ve Hareket', icon: '🏋️' },
@@ -64,9 +99,20 @@ export const SUBJECTS: SubjectInfo[] = [
       { id: 'dunya_uzay', name: 'Dünya ve Uzay', icon: '🌍' },
       { id: 'kimya', name: 'Kimyasal Değişimler', icon: '⚗️' },
       { id: 'ekosistem', name: 'Ekosistem', icon: '🌳' },
+      // ─── YENİ EKLEDİKLERİMİZ ───
+      { id: 'mevsimler_ve_iklim', name: 'Mevsimler ve İklim', icon: '☀️❄️' },
+      { id: 'dna_genetik_kod', name: 'DNA ve Genetik Kod', icon: '🧬' },
+      { id: 'basinc', name: 'Basınç (Katı-Sıvı-Gaz)', icon: '📏' },
+      { id: 'periyodik_sistem', name: 'Periyodik Sistem', icon: '🧪' },
+      { id: 'kimyasal_tepkime', name: 'Kimyasal & Fiziksel Tepkimeler', icon: '🔥' },
+      { id: 'asit_baz', name: 'Asitler ve Bazlar', icon: '🧪' },
+      { id: 'basit_makineler', name: 'Basit Makineler', icon: '⚙️' },
+      { id: 'canlilar_besin', name: 'Canlılar & Besin Zinciri', icon: '🍃' },
     ],
   },
-  {
+  // Tarih, İngilizce ve Din için mevcut konular yeterli görünüyor, istersen onları da genişletiriz.
+  // Tarih, İngilizce ve Din kısımlarını şimdilik değiştirmedim (senin kodunda zaten iyi görünüyor).
+];
     id: 'tarih', name: 'T.C. İnkılap Tarihi', icon: '🏛️', gradient: 'gradient-tarih',
     topics: [
       { id: 'kurtulus_savasi', name: 'Kurtuluş Savaşı', icon: '⚔️' },

@@ -2094,17 +2094,14 @@ export const questions: Question[] = [
   { id: 'dn021', subject: 'din', topic: 'hadis', difficulty: 'kolay', question: 'Hadis ne demektir?', options: ['Kur\'an ayeti', 'Hz. Muhammed\'in sözleri', 'Dua', 'Sure'], correctIndex: 1, explanation: 'Peygamberimizin söz ve davranışları', tags: ['tanım'] },
   { id: 'dn022', subject: 'din', topic: 'hadis', difficulty: 'orta', question: '"Sahih-i Buhari" nedir?', options: ['Tefsir kitabı', 'Hadis kitabı', 'Fıkıh kitabı', 'Tarih kitabı'], correctIndex: 1, explanation: 'En güvenilir hadis kitaplarından biridir.', tags: ['kitap'] },
   { id: 'dn023', subject: 'din', topic: 'hadis', difficulty: 'zor', question: '"Kütüb-i Sitte" ne demektir?', options: ['4 kitap', '5 kitap', '6 kitap', '7 kitap'], correctIndex: 2, explanation: 'Altı güvenilir hadis kitabı', tags: ['koleksiyon'] },
-
   // Değerler Eğitimi
   { id: 'dn024', subject: 'din', topic: 'degerler', difficulty: 'kolay', question: 'Hangisi temel değerlerden biridir?', options: ['Bencillik', 'Saygı', 'Kibir', 'Hırs'], correctIndex: 1, explanation: 'Saygı temel bir değerdir.', tags: ['saygı'] },
   { id: 'dn025', subject: 'din', topic: 'degerler', difficulty: 'orta', question: 'Hoşgörü ne demektir?', options: ['Her şeyi kabul etmek', 'Farklılıklara saygı göstermek', 'Sessiz kalmak', 'Karşı çıkmamak'], correctIndex: 1, explanation: 'Farklılıklara saygı göstermektir.', tags: ['hoşgörü'] },
   { id: 'dn026', subject: 'din', topic: 'degerler', difficulty: 'zor', question: '"Komşusu açken tok yatan bizden değildir" hadisi neyi vurgular?', options: ['Yemek yemeyi', 'Paylaşmayı', 'Uyumayı', 'Komşuluğu'], correctIndex: 1, explanation: 'Paylaşma ve dayanışma', tags: ['paylaşma'] },
-  
-]
+];  // ← array burada biter (virgül + ])
 
 export function getQuestionsBySubject(subject: Subject): Question[] {
   return questions.filter(q => q.subject === subject);
-}
 }
 
 export function getQuestionsByTopic(subject: Subject, topic: string): Question[] {

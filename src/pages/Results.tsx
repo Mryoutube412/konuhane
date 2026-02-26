@@ -1,11 +1,16 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { AnswerRecord } from '../context/GameContext';
+import { useBadgeChecker } from '../hooks/useBadgeChecker';
+import type { BadgeDef } from '../data/badges';
+import { getRarityColor } from '../data/badges';
 
 interface ResultsState {
   answers: AnswerRecord[];
   subject: string;
   subjectName: string;
+  topic?: string;
+  topicName?: string;
 }
 
 export default function Results() {
@@ -13,6 +18,19 @@ export default function Results() {
   const navigate = useNavigate();
   const state = location.state as ResultsState | null;
   const [reviewIndex, setReviewIndex] = useState<number | null>(null);
+  const [newBadges, setNewBadges] = useState<BadgeDef[]>([]);
+  const [badgesChecked, setBadgesChecked] = useState(false);
+  const { checkAndAwardBadges } = useBadgeChecker();
+
+  // Check badges on mount
+  useEffect(() => {
+    if (state && !badgesChecked) {
+      setBadgesChecked(true);
+      checkAndAwardBadges(state.answers, state.subject).then(result => {
+        setNewBadges(result.newBadges);
+      });
+    }
+  }, [state, badgesChecked, checkAndAwardBadges]);
 
   if (!state) {
     navigate('/');
@@ -126,6 +144,22 @@ export default function Results() {
             </div>
           </div>
         </div>
+
+        {/* New Badges Earned */}
+        {newBadges.length > 0 && (
+          <div className="bg-card rounded-2xl p-6 card-shadow animate-fade-in">
+            <h2 className="font-bold text-card-foreground mb-4 text-center">🎉 Yeni Rozet Kazandın!</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {newBadges.map(b => (
+                <div key={b.id} className={`rounded-xl p-4 text-center bg-gradient-to-br ${getRarityColor(b.rarity)} text-white animate-badge-pop`}>
+                  <div className="text-3xl mb-1">{b.icon}</div>
+                  <p className="text-sm font-bold">{b.name}</p>
+                  <p className="text-[10px] opacity-80">{b.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Answer list */}
         <div className="bg-card rounded-2xl p-6 card-shadow">

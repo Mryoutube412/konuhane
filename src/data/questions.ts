@@ -2100,7 +2100,7 @@ export const questions: Question[] = [
   { id: 'dn025', subject: 'din', topic: 'degerler', difficulty: 'orta', question: 'Hoşgörü ne demektir?', options: ['Her şeyi kabul etmek', 'Farklılıklara saygı göstermek', 'Sessiz kalmak', 'Karşı çıkmamak'], correctIndex: 1, explanation: 'Farklılıklara saygı göstermektir.', tags: ['hoşgörü'] },
   { id: 'dn026', subject: 'din', topic: 'degerler', difficulty: 'zor', question: '"Komşusu açken tok yatan bizden değildir" hadisi neyi vurgular?', options: ['Yemek yemeyi', 'Paylaşmayı', 'Uyumayı', 'Komşuluğu'], correctIndex: 1, explanation: 'Paylaşma ve dayanışma', tags: ['paylaşma'] },
   
-];
+]
 
 export function getQuestionsBySubject(subject: Subject): Question[] {
   return questions.filter(q => q.subject === subject);

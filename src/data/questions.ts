@@ -327,16 +327,108 @@ export const questions: Question[] = [
   // ==========================================
 
   // --- 6. FİİLLER (Anlam, Kip, Şahıs - 3 Zorluk x 3 Soru = 9 Soru) ---
-  { id: 'tr_fi_k1', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: 'Hangisi "oluş" fiilidir?', options: ['Uyumak', 'Sararmak', 'Kırmak', 'Atmak'], correctIndex: 1, explanation: 'Zamanla kendiliğinden gerçekleşen değişimler oluş fiilidir.', tags: ['fiil-anlam'] },
-  { id: 'tr_fi_k2', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: '"Gidiyorum" fiilinin kipi ve şahsı nedir?', options: ['Gelecek Zaman - 1. Tekil', 'Şimdiki Zaman - 1. Tekil', 'Geniş Zaman - 1. Çoğul', 'Geçmiş Zaman - 2. Tekil'], correctIndex: 1, explanation: '-yor (Şimdiki Zaman), -um (Ben).', tags: ['kip-sahis'] },
-  { id: 'tr_fi_k3', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: 'Hangisi bir kılış (iş) fiilidir?', options: ['Onu sevmek', 'Uzanmak', 'Büyümek', 'Acıkmak'], correctIndex: 0, explanation: 'Nesne alabildiği için iş fiilidir.', tags: ['fiil-anlam'] },
-  { id: 'tr_fi_o1', subject: 'turkce', topic: 'fiiller', difficulty: 'orta', question: '"Her akşam kitap okur." cümlesindeki fiilin kipi hangisidir?', options: ['Geniş Zaman', 'Gelecek Zaman', 'Şimdiki Zaman', 'Gereklilik'], correctIndex: 0, explanation: '-r/-ar eki geniş zamanı bildirir.', tags: ['kip'] },
-  { id: 'tr_fi_o2', subject: 'turkce', topic: 'fiiller', difficulty: 'orta', question: 'Hangisi "istek kipi" ile çekimlenmiştir?', options: ['Gelmeli', 'Gelse', 'Gele', 'Gelmiş'], correctIndex: 2, explanation: '-e/-a eki istek kipidir.', tags: ['kip'] },
-  { id: 'tr_fi_o3', subject: 'turkce', topic: 'fiiller', difficulty: 'orta', question: 'Hangisi 2. çoğul şahıs eki almıştır?', options: ['Geldik', 'Geldiniz', 'Geldiler', 'Geldin'], correctIndex: 1, explanation: 'Siz geldiniz (2. Çoğul).', tags: ['sahis'] },
-  { id: 'tr_fi_z1', subject: 'turkce', topic: 'fiiller', difficulty: 'zor', question: 'Hangisinde anlam kayması vardır?', options: ['Yarın sinemaya gidiyoruz.', 'Dün ödevimi bitirdim.', 'Her gün spor yaparım.', 'Kitap okumayı seviyorum.'], correctIndex: 0, explanation: 'Yarın (gelecek) için -yor (şimdiki) kullanılmış.', tags: ['anlam-kaymasi'] },
-  { id: 'tr_fi_z2', subject: 'turkce', topic: 'fiiller', difficulty: 'zor', question: 'Hangisi hem haber hem dilek kipi örneğini bir arada barındırır?', options: ['Gel ve gör.', 'Gelecek ve göreceksin.', 'Gelirse görürsün.', 'Gelmiş ama görmemiş.'], correctIndex: 2, explanation: 'Gelirse (Şart - Dilek), görürsün (Geniş Zaman - Haber).', tags: ['kip-karma'] },
-  { id: 'tr_fi_z3', subject: 'turkce', topic: 'fiiller', difficulty: 'zor', question: '"Ona her şeyi anlatsaydın keşke." cümlesindeki fiilin çekimi nedir?', options: ['Haber kipi', 'Dilek kipi', 'Soru kipi', 'İsim çekimi'], correctIndex: 1, explanation: 'Şart kipi (-sa) bir dilek kipidir.', tags: ['dilek-kip'] },
-
+  // --- 6. FİİLLER (Anlam, Kip, Şahıs - 3 Zorluk x 3 Soru = 9 Soru) ---
+[
+  { 
+    id: 'tr_fi_k1', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'kolay', 
+    question: 'Hangisi "oluş" fiilidir?', 
+    options: ['Uyumak', 'Sararmak', 'Kırmak', 'Atmak'], 
+    correctIndex: 1, 
+    explanation: 'Zamanla kendiliğinden gerçekleşen değişimler oluş fiilidir.', 
+    tags: ['fiil-anlam'] 
+  },
+  { 
+    id: 'tr_fi_k2', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'kolay', 
+    question: '"Gidiyorum" fiilinin kipi ve şahsı nedir?', 
+    options: ['Gelecek Zaman - 1. Tekil', 'Şimdiki Zaman - 1. Tekil', 'Geniş Zaman - 1. Çoğul', 'Geçmiş Zaman - 2. Tekil'], 
+    correctIndex: 1, 
+    explanation: '-yor (Şimdiki Zaman), -um (Ben).', 
+    tags: ['kip-sahis'] 
+  },
+  { 
+    id: 'tr_fi_k3', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'kolay', 
+    question: 'Hangisi bir kılış (iş) fiilidir?', 
+    options: ['Onu sevmek', 'Uzanmak', 'Büyümek', 'Acıkmak'], 
+    correctIndex: 0, 
+    explanation: 'Nesne alabildiği için iş fiilidir.', 
+    tags: ['fiil-anlam'] 
+  },
+  { 
+    id: 'tr_fi_o1', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'orta', 
+    question: '"Her akşam kitap okur." cümlesindeki fiilin kipi hangisidir?', 
+    options: ['Geniş Zaman', 'Gelecek Zaman', 'Şimdiki Zaman', 'Gereklilik'], 
+    correctIndex: 0, 
+    explanation: '-r/-ar eki geniş zamanı bildirir.', 
+    tags: ['kip'] 
+  },
+  { 
+    id: 'tr_fi_o2', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'orta', 
+    question: 'Hangisi "istek kipi" ile çekimlenmiştir?', 
+    options: ['Gelmeli', 'Gelse', 'Gele', 'Gelmiş'], 
+    correctIndex: 2, 
+    explanation: '-e/-a eki istek kipidir.', 
+    tags: ['kip'] 
+  },
+  { 
+    id: 'tr_fi_o3', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'orta', 
+    question: 'Hangisi 2. çoğul şahıs eki almıştır?', 
+    options: ['Geldik', 'Geldiniz', 'Geldiler', 'Geldin'], 
+    correctIndex: 1, 
+    explanation: 'Siz geldiniz (2. Çoğul).', 
+    tags: ['sahis'] 
+  },
+  { 
+    id: 'tr_fi_z1', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'zor', 
+    question: 'Hangisinde anlam kayması vardır?', 
+    options: ['Yarın sinemaya gidiyoruz.', 'Dün ödevimi bitirdim.', 'Her gün spor yaparım.', 'Kitap okumayı seviyorum.'], 
+    correctIndex: 0, 
+    explanation: 'Yarın (gelecek) için -yor (şimdiki) kullanılmış.', 
+    tags: ['anlam-kaymasi'] 
+  },
+  { 
+    id: 'tr_fi_z2', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'zor', 
+    question: 'Hangisi hem haber hem dilek kipi örneğini bir arada barındırır?', 
+    options: ['Gel ve gör.', 'Gelecek ve göreceksin.', 'Gelirse görürsün.', 'Gelmiş ama görmemiş.'], 
+    correctIndex: 2, 
+    explanation: 'Gelirse (Şart - Dilek), görürsün (Geniş Zaman - Haber).', 
+    tags: ['kip-karma'] 
+  },
+  { 
+    id: 'tr_fi_z3', 
+    subject: 'turkce', 
+    topic: 'fiiller', 
+    difficulty: 'zor', 
+    question: '"Ona her şeyi anlatsaydın keşke." cümlesindeki fiilin çekimi nedir?', 
+    options: ['Haber kipi', 'Dilek kipi', 'Soru kipi', 'İsim çekimi'], 
+    correctIndex: 1, 
+    explanation: 'Şart kipi (-sa) bir dilek kipidir.', 
+    tags: ['dilek-kip'] 
+  },
+],  // ← buraya virgül koy (eğer sonraki bölüm varsa)
   // --- 7. CÜMLENİN ÖĞELERİ (3 Zorluk x 5 Soru = 15 Soru) ---
   // Kolay (5)
   { id: 'tr_co_k1', subject: 'turkce', topic: 'cumlenin_ogeleri', difficulty: 'kolay', question: '"Ali eve geldi." cümlesinin öznesi kimdir?', options: ['Ali', 'Eve', 'Geldi', 'Bilinmiyor'], correctIndex: 0, explanation: 'Gelen kim? Ali.', tags: ['özne'] },

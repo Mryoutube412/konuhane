@@ -1,3 +1,6 @@
+// src/data/questions.ts dosyasının en tepesine
+export {};
+
 export interface Question {
   id: string;
   subject: Subject;

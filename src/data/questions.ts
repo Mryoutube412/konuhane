@@ -327,7 +327,7 @@ export const questions: Question[] = [
   // ==========================================
 
   // --- 6. FİİLLER (Anlam, Kip, Şahıs - 3 Zorluk x 3 Soru = 9 Soru) ---
-  { id: 'tr_fi_k1', subject: 'turkce', topic; 'fiiller', difficulty: 'kolay', question: 'Hangisi "oluş" fiilidir?', options: ['Uyumak', 'Sararmak', 'Kırmak', 'Atmak'], correctIndex: 1, explanation: 'Zamanla kendiliğinden gerçekleşen değişimler oluş fiilidir.', tags: ['fiil-anlam'] },
+  { id: 'tr_fi_k1', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: 'Hangisi "oluş" fiilidir?', options: ['Uyumak', 'Sararmak', 'Kırmak', 'Atmak'], correctIndex: 1, explanation: 'Zamanla kendiliğinden gerçekleşen değişimler oluş fiilidir.', tags: ['fiil-anlam'] },
   { id: 'tr_fi_k2', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: '"Gidiyorum" fiilinin kipi ve şahsı nedir?', options: ['Gelecek Zaman - 1. Tekil', 'Şimdiki Zaman - 1. Tekil', 'Geniş Zaman - 1. Çoğul', 'Geçmiş Zaman - 2. Tekil'], correctIndex: 1, explanation: '-yor (Şimdiki Zaman), -um (Ben).', tags: ['kip-sahis'] },
   { id: 'tr_fi_k3', subject: 'turkce', topic: 'fiiller', difficulty: 'kolay', question: 'Hangisi bir kılış (iş) fiilidir?', options: ['Onu sevmek', 'Uzanmak', 'Büyümek', 'Acıkmak'], correctIndex: 0, explanation: 'Nesne alabildiği için iş fiilidir.', tags: ['fiil-anlam'] },
   { id: 'tr_fi_o1', subject: 'turkce', topic: 'fiiller', difficulty: 'orta', question: '"Her akşam kitap okur." cümlesindeki fiilin kipi hangisidir?', options: ['Geniş Zaman', 'Gelecek Zaman', 'Şimdiki Zaman', 'Gereklilik'], correctIndex: 0, explanation: '-r/-ar eki geniş zamanı bildirir.', tags: ['kip'] },

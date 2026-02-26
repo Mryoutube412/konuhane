@@ -321,7 +321,6 @@ export const questions: Question[] = [
   { id: 'tr_fi_z3', subject: 'turkce', topic: 'fiilimsiler', difficulty: 'zor', question: 'Hangisinde farklı türde bir fiilimsi vardır?', options: ['Gülerek', 'Koşup', 'Bakınca', 'Gidiş'], correctIndex: 3, explanation: 'Gidiş isim-fiil, diğerleri zarf-fiildir.', tags: ['ayrım'] },
   { id: 'tr_fi_z4', subject: 'turkce', topic: 'fiilimsiler', difficulty: 'zor', question: '"Anlatılacak hikayelerim bitmedi." cümlesindeki fiilimsinin türü nedir?', options: ['İsim-fiil', 'Sıfat-fiil', 'Zarf-fiil', 'Kalıcı isim'], correctIndex: 1, explanation: '-ecek sıfat-fiildir.', tags: ['sıfat-fiil'] },
   { id: 'tr_fi_z5', subject: 'turkce', topic: 'fiilimsiler', difficulty: 'zor', question: 'Hangi cümlede fiilimsi yüklem görevindedir?', options: ['Tek amacım okumaktır.', 'Gidince beni bekle.', 'Koşan çocuk yoruldu.', 'Gülerek yanıma geldi.'], correctIndex: 0, explanation: 'Ek-fiil alarak yüklem olmuştur.', tags: ['yüklem'] },
-];
 // ==========================================
   // TÜRKÇE PART 2/4 (TAM KADRO - 5'ER SORU)
   // ==========================================
@@ -428,7 +427,7 @@ export const questions: Question[] = [
     explanation: 'Şart kipi (-sa) bir dilek kipidir.', 
     tags: ['dilek-kip'] 
   },
-],  // ← buraya virgül koy (eğer sonraki bölüm varsa)
+
   // --- 7. CÜMLENİN ÖĞELERİ (3 Zorluk x 5 Soru = 15 Soru) ---
   // Kolay (5)
   { id: 'tr_co_k1', subject: 'turkce', topic: 'cumlenin_ogeleri', difficulty: 'kolay', question: '"Ali eve geldi." cümlesinin öznesi kimdir?', options: ['Ali', 'Eve', 'Geldi', 'Bilinmiyor'], correctIndex: 0, explanation: 'Gelen kim? Ali.', tags: ['özne'] },
@@ -499,7 +498,6 @@ export const questions: Question[] = [
   { id: 'tr_pa_k4', subject: 'turkce', topic: 'paragraf', difficulty: 'kolay', question: 'Hangisi paragrafın bölümlerinden biri değildir?', options: ['Giriş', 'Gelişme', 'Sonuç', 'Özet'], correctIndex: 3, explanation: 'Paragraf üç ana bölümden oluşur.', tags: ['paragraf-yapısı'] },
   { id: 'tr_pa_k5', subject: 'turkce', topic: 'paragraf', difficulty: 'kolay', question: 'Konunun sınırlandırılarak verildiği paragraf cümlesi hangisidir?', options: ['Giriş Cümlesi', 'Gelişme Cümlesi', 'Sonuç Cümlesi', 'Yardımcı Cümle'], correctIndex: 0, explanation: 'Giriş cümlesi konuyu tanıtır.', tags: ['giriş-cümlesi'] },
   // Orta (5), Zor (5) şeklinde bu set devam edecek... (Token koruması için Orta ve Zorları bir sonraki Part'ta Metin Türleri ile birleştirebilirim)
-];
 // ==========================================
   // TÜRKÇE PART 3/4 (TAM KADRO)
   // ==========================================
@@ -543,7 +541,7 @@ export const questions: Question[] = [
   { id: 'tr_ct_k1', subject: 'turkce', topic: 'cumle_turleri', difficulty: 'kolay', question: 'Yüklemi sonda olan cümleye ne denir?', options: ['Devrik Cümle', 'Kurallı Cümle', 'Eksiltili Cümle', 'Fiil Cümlesi'], correctIndex: 1, explanation: 'Yüklem sondaysa kurallıdır.', tags: ['kurallı'] },
   // ... (Geri kalan 14 soru yapılandırıldı)
 
-];
+
 // ==========================================
   // TÜRKÇE PART 3/4 (KALAN ANA KONULAR)
   // ==========================================
@@ -609,7 +607,6 @@ export const questions: Question[] = [
   { id: 'tr_da_z3', subject: 'turkce', topic: 'atasozleri', difficulty: 'zor', question: '"Besle kargayı oysun gözünü" atasözü hangisini anlatır?', options: ['Hayvan sevgisini', 'Nankörlüğü', 'Dostluğu', 'Kurnazlığı'], correctIndex: 1, explanation: 'İyilik yapılan kişinin kötülükle karşılık vermesi.', tags: ['atasözü'] },
   { id: 'tr_da_z4', subject: 'turkce', topic: 'deyimler', difficulty: 'zor', question: '"Ağzıyla kuş tutmak" deyiminin anlamı nedir?', options: ['İmkansızı başarmak', 'Çok yetenekli olmak', 'Avcılık yapmak', 'Kendini sevdirmek için her şeyi yapmak'], correctIndex: 3, explanation: 'Ne kadar olağanüstü iş yaparsa yapsın yaranamamak veya yaranmak için çabalamak.', tags: ['deyim'] },
   { id: 'tr_da_z5', subject: 'turkce', topic: 'atasozleri', difficulty: 'zor', question: '"Boş başak dik durur" atasözü neyi vurgular?', options: ['Tarımı', 'Bilgisiz kişinin kibirli olmasını', 'Zayıflığı', 'Dürüstlüğü'], correctIndex: 1, explanation: 'Bilgili insan mütevazı olur, cahil ise kendini üstün görür.', tags: ['atasözü'] },
-];
 // ==========================================
   // TÜRKÇE PART 4/4 - FİNAL
   // ==========================================
@@ -641,7 +638,6 @@ export const questions: Question[] = [
   // --- 18. SÖZEL MANTIK VE MUHAKEME (15 SORU) ---
   { id: 'tr_sm_k1', subject: 'turkce', topic: 'sozel_mantik', difficulty: 'kolay', question: 'Sözel mantık sorularında en önemli adım hangisidir?', options: ['Tablo oluşturmak', 'Hızlı okumak', 'Şıkları ezberlemek', 'Tahmin yürütmek'], correctIndex: 0, explanation: 'Verileri tabloya dökmek hatayı önler.', tags: ['yöntem'] },
   // (Burada da mantık yürütme, grafik yorumlama soruları 5K-5O-5Z kurgulanır)
-];
 
   // ═══════════════ MATEMATİK ═══════════════
   // Toplama-Çıkarma
@@ -1057,7 +1053,6 @@ export const questions: Question[] = [
   // --- 10. DÖNÜŞÜM GEOMETRİSİ (9 SORU) ---
   // (3K, 3O, 3Z)
   { id: 'mat_dg_k1', subject: 'matematik', topic: 'donusum_geometrisi', difficulty: 'kolay', question: 'A(3, -2) noktasının y eksenine göre yansıması nedir?', options: ['(-3, -2)', '(3, 2)', '(-3, 2)', '(0, -2)'], correctIndex: 0, explanation: 'y\'ye göre yansımada x işaret değiştirir.', tags: ['yansıma'] },
-];
 // --- 8. EŞİTSİZLİKLER (Kalan 10 Soru) ---
   // Orta (5)
   { id: 'mat_es_o1', subject: 'matematik', topic: 'esitsizlikler', difficulty: 'orta', question: '2(x - 3) ≥ 4x + 2 eşitsizliğini sağlayan x değerleri hangisidir?', options: ['x ≥ -4', 'x ≤ -4', 'x ≥ 4', 'x ≤ 4'], correctIndex: 1, explanation: '2x-6 ≥ 4x+2 => -8 ≥ 2x => -4 ≥ x.', tags: ['çözüm'] },
@@ -1095,7 +1090,6 @@ export const questions: Question[] = [
   { id: 'mat_dg_z1', subject: 'matematik', topic: 'donusum_geometrisi', difficulty: 'zor', question: 'A(2, 3) noktası önce x eksenine göre yansıtılıp sonra 2 birim sağa ötelenirse sonuç ne olur?', options: ['(4, 3)', '(4, -3)', '(0, -3)', '(2, -1)'], correctIndex: 1, explanation: '(2,3) --yansıma--> (2,-3) --öteleme--> (4,-3).', tags: ['ardışık-dönüşüm'] },
   { id: 'mat_dg_z2', subject: 'matematik', topic: 'donusum_geometrisi', difficulty: 'zor', question: 'y = 2 doğrusuna göre yansıma alındığında hangi koordinat değişmez?', options: ['x koordinatı', 'y koordinatı', 'Her ikisi de', 'Hiçbiri'], correctIndex: 0, explanation: 'Yatay bir doğruya göre yansımada x sabit kalır, y değişir.', tags: ['doğruya-göre'] },
   { id: 'mat_dg_z3', subject: 'matematik', topic: 'donusum_geometrisi', difficulty: 'zor', question: 'Bir ABC üçgeninin köşeleri A(1,1), B(3,1), C(1,4)\'tür. Bu üçgen orijine göre yansıtılırsa B\' noktası ne olur?', options: ['(3, -1)', '(-3, 1)', '(-3, -1)', '(1, 3)'], correctIndex: 2, explanation: 'B(3,1) orijine göre (-3,-1) olur.', tags: ['köşe-yansıma'] },
-];
 // ==========================================
   // EŞİTSİZLİKLER (ZOR - EKSİK KALAN 3 SORU)
   // ==========================================
